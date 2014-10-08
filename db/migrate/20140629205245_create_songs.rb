@@ -6,7 +6,8 @@ class CreateSongs < ActiveRecord::Migration
       t.integer :duration
       t.decimal :price
       t.belongs_to :album, index: true
-
+      # t.integer :album_id, index:true
+      
       t.timestamps
     end
   end
